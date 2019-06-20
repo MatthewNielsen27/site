@@ -1,3 +1,3 @@
 # Site
 
-My personal website
+My personal website, done my way.
