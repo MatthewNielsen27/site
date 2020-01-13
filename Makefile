@@ -1,6 +1,8 @@
-.PHONY: all deps css run
+.PHONY: all build css deps serve
 
 all: run
+
+build: deps css
 
 deps:
 	@npm install
@@ -8,6 +10,6 @@ deps:
 css:
 	@mv node_modules/nielsen-style/css/style.min.css css/style.min.css
 
-run:
+serve:
 	@http-server . -p 4000
 
