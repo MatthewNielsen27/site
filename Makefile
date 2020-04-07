@@ -1,6 +1,6 @@
 .PHONY: all build css deps serve
 
-all: run
+all: build serve
 
 build: deps css
 
@@ -12,4 +12,3 @@ css:
 
 serve:
 	@http-server . -p 4000
-
